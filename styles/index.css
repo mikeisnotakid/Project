@@ -1,0 +1,62 @@
+main {
+    display: flex;
+
+}
+
+.herobox1 {
+    flex: 2;
+}
+
+.herobox2 {
+    flex: 1;
+}
+
+.cards {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-size: cover;
+    background-position: bottom;
+    padding: 30px 30px 20px 30px;
+    box-sizing: border-box;
+    min-height: 300px;
+    width: 30%;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.9);
+
+}
+
+.cards a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card1 {
+    background-color: rgba(228, 124, 136, 0.288);
+    background-image: url('/images/image-background-card1.jpg');
+
+}
+
+.card2 {
+    background-color: rgb(12, 13, 64);
+    background-image: url('/images/image-background-card2-b.jpg');
+
+
+}
+
+.card3 {
+    background-color: rgb(1, 0, 1);
+    background-image: url('/images/image-background-card3.jpg');
+}
+
+.expand:hover {
+    box-shadow: 0 2px 2px rgba(191, 182, 182, 0.9);
+    background-size: contain;
+    margin: 10px;
+}
