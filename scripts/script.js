@@ -27,7 +27,7 @@ messageForm.addEventListener('submit', (event) => {
 
         // When the server responds true, alert the user of success
         successMessageBox.innerHTML = ` Hello ${fullName}, your response has been recorded `
-        successMessageBox.style.display = 'none';
+        successMessageBox.style.display = 'block';
 
         fullNameInputTag.value = '';
         emailInputTag.value = '';
