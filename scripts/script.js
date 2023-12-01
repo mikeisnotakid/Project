@@ -8,6 +8,12 @@ messageForm.addEventListener('submit', (event) => {
     const emailInputTag = document.getElementById("email");
     const messageTextareaTag = document.getElementById("textarea");
 
+
+    fullNameInputTag.style.backgroundColor = 'white';
+    emailInputTag.style.backgroundColor = 'white';
+    messageTextareaTag.style.backgroundColor = 'white';
+
+
     let fullName = fullNameInputTag.value;
     let email = emailInputTag.value;
     let message = messageTextareaTag.value;
@@ -28,6 +34,16 @@ messageForm.addEventListener('submit', (event) => {
         messageTextareaTag.value = '';
 
     } else {
-        alert('ALL fields are required. Please provide them.');
+        if (fullName == '') {
+            fullNameInputTag.style.backgroundColor = 'rgb(255 0 0 / 15%)';
+        } else if (email == '') {
+            emailInputTag.style.backgroundColor = 'rgb(255 0 0 / 15%)';
+
+        } else if (message == '') {
+            messageTextareaTag.style.backgroundColor = 'rgb(255 0 0 / 15%)';
+        } else {
+            pass;
+        }
     }
+
 })
